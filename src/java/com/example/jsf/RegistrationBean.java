@@ -1,14 +1,16 @@
 package com.example.jsf;
 
 import javax.inject.Named;
-import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+import javax.faces.bean.SessionScoped;
 
 /**
  *
  * @author Student
  */
-@Named(value = "registrationBean")
+@ManagedBean(name = "registrationBean")
 @SessionScoped
 public class RegistrationBean implements Serializable {
 
